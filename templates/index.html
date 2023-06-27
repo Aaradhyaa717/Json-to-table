@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HTML Page</title>
+    <link rel="stylesheet"  href="{{ url_for('static', filename='style.css')}}" >
+    <script>
+
+    </script>
+
+  </head>
+  <body>
+    <header>
+      <h1>JSON to Table Page</h1>
+    </header>
+    <nav>
+      <ul class = "topics">
+        <li><a href="#">JSON</a></li>
+        <li><a href="#">TABLE</a></li>
+        <li><a href="#">Download</a></li>
+      </ul>
+    </nav>
+    <main>
+     <!-- 
+      <form method="POST">
+        <label for="myInput">Input:</label>
+        <input type="text" name="myInput" id="myInput"  oninput="resizeTextarea()"  size = "250"  role="textbox" contenteditable = "true" required>
+        <button type="submit">Submit</button>
+    </form>
+    -->
+
+    <form method="POST" autocomplete="off">
+      <label for="myInput">Input:</label>
+      <textarea type="text" name="myInput" id="myInput"  oninput="resizeTextarea()"  size = "250"  role="textbox" contenteditable = "true" required>
+      </textarea>
+      <br>
+      <input type="submit">
+  </form>
+
+    <script>
+      function resizeTextarea() {
+      var textarea = document.getElementById("myInput");
+      textarea.style.height = "auto"; // Reset the height to auto to calculate the new height based on content
+      textarea.style.height = textarea.scrollHeight + 'px'; // Set the new height based on the scroll height
+    }
+    </script>
+
+
+    </main>
+    
+  </body>
+</html>

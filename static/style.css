@@ -1,0 +1,117 @@
+/* Reset default styles */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Style the navigation */
+nav {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #333;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Style the main content */
+main {
+  padding: 20px;
+}
+
+/* Style the form */
+textarea {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 75%;
+  height: 100px;
+  transition: height 0.3s;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  min-height: 50%;
+  resize: none;
+}
+
+
+
+
+form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #555;
+}
+
+input {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+input{
+  background-color: #555;
+}
+
+
+
+
+
+/* table */ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #0d31cf;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #e6e6e6;
+}
+
+
